@@ -1,0 +1,232 @@
+\documentclass{article}
+\usepackage{graphicx, amsmath, amssymb, amsfonts, amsthm, xcolor, fancyhdr, asymptote, tikz,geometry, hyperref}
+\geometry{
+top=40mm,
+bottom=40mm,
+left=40mm,
+right=40mm,
+}
+\reversemarginpar
+\newcommand{\prestar}{\vspace*{0.3em}\hspace*{\fill}}
+\newcommand{\onestar}{\marginpar{\prestar\textcolor{red}{$\ast$}}}
+\newcommand{\twostar}{\marginpar{\prestar\textcolor{red}{$\ast$$\ast$}}}
+\newcommand{\threestar}{\marginpar{\prestar\textcolor{red}{$\ast$$\ast$$\ast$}}}
+\title{}\date{}\author{}
+\begin{document}
+\Huge
+\begin{titlepage}
+   \begin{center}
+       \vspace*{7cm}
+
+       \textbf{Problems you didn't know \\you probably don't need}
+
+       \vspace{1cm}
+\LARGE
+        Excessive exercises aimed for foundational \\conceptual understanding building
+            
+       \vspace{1cm}
+\Large
+       Lim Yun Zhe
+      
+   \end{center}
+\end{titlepage}
+\normalsize
+\section*{Forewords}
+The \textcolor{red}{\textit{current version}} should cover some of the concepts needed in SPM except for data analysis and financial mathematics, especially those that may be useful for further math. Hopefully this helps someone.\\[\baselineskip]
+The various topics are arranged into categories of approximate fields of mathematics, but not necessarily by topic, and are some problems may be labeled with asterisks to indicate additional difficulty, which is approximately rated by absolute difficulty (where Complex $\neq$ Difficulty) but difficulty may vary from person to person. The difficulty are as the example below.
+\begin{enumerate}
+       \item \onestar This is a slightly hard problem.
+       \item \twostar This is a hard problem.
+       \item \threestar This is a very hard problem. 
+\end{enumerate}
+
+\newpage\noindent
+\section{Algebra}
+\begin{enumerate}
+\item The graph of $x^2+y^2=1$ is the unit circle for $x$, $y\in\mathbb{R}$. Does it admit an function $f:\mathbb{R}\to\mathbb{R}$ by mapping $x$ to $y$? Explain.
+\item Consider the function $f:\mathbb{R}\to\mathbb{R}$ where $f(x)=|x-|x-2||$. 
+       \begin{itemize}
+              \item[(a)] Sketch the graph by plotting integer points
+              \item[(b)] State the domain, codomain, the range, and type of relation of the function.
+       \end{itemize}
+\item Let $g:\mathbb{Q}\to\mathbb{Q}$ be a quadratic function such that $g(1)=3$, $g(-1)=24$ and $g(3)=57$. ($\mathbb{Q}$ is the set of rationals.)
+       \begin{itemize}
+              \item[(a)] Determine the function $g(x)$.
+              \item[(b)] Does $g$ have a value of $x$ that maps to itself? State it, or explain why not so.
+       \end{itemize}
+\item Consider the function $\displaystyle f:\mathbb{R}\setminus\left\{-\frac{d}{c}\right\}\to\mathbb{R}$ with $\displaystyle f(z)=\frac{az+b}{cz+d}$, where $a$, $b$, $c$, $d$ are constants with $ad-bc\neq 0$. Also, let $\mathfrak{H} = \begin{pmatrix}a & b \\c & d\end{pmatrix}$.
+       \begin{itemize}
+              \item[(a)] Calculate $f^n(z)$ and $A^n$ for $n=2$, do you see any coincidence? (If not, calculate for $n=3$ as well.)
+              \item[(b)] Consider $\mathfrak{H} = \begin{pmatrix}1 & -1 \\1 & 0\end{pmatrix}$, find $f^n(z)$ for any $n$.
+       \end{itemize}
+\item Consider functions $f(x)=x^3+1$ and $g(x)=\frac{1}{x}-1$.
+      \begin{itemize}
+              \item[(a)] Find $fg$ and $gf$.
+              \item[(b)] For which values are the functions above not defined for?
+       \end{itemize}
+\item Determine if the following functions have inverses. If no, explain why, else, calculate the inverse function.
+      \begin{itemize}
+              \item[(a)] $f:\mathbb{R}\to\mathbb{Z}$, where $f(x)=\lfloor x\rfloor$. ($\lfloor x\rfloor$ is the largest integer not larger than $x$.)
+              \item[(b)] $g:\mathbb{R}^+\to\mathbb{R}$, where $g(x)=\log x$.
+              \item[(c)] $h:\mathbb{Q}\to\mathbb{Q}$, where $h(x)=x^3$.
+       \end{itemize}
+\item \onestar Let $g:\mathbb{R}\to\mathbb{R}$ where $g(g(x))=x$ for all real $x\in\mathbb{R}$. Show that $g(x)$ must have an inverse.
+\item Given that $\alpha$ and $\beta$ are the roots of the quadratic $x^2-5x+1$. Construct a quadratic equation that has the following roots.
+       \begin{itemize}
+              \item[(a)] $\frac 1\alpha$ and $\frac 1\beta$.
+              \item[(b)] $\sqrt{1+\alpha^2}$ and $\sqrt{1+\beta^2}$.
+              \item[(c)] $k\alpha+\beta$ and $\alpha+k\beta$, where $k$ is an constant.
+       \end{itemize}
+\item Let $\alpha$ be a root of $x^2-x+1$. For all positive integer $n\ge 2$, express $\alpha^n$ in the form of $p_n\alpha+q_n$, where $p_n$ and $q_n$ are integers.
+\item By completing the square, or otherwise, show the quadratic formula \[x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}=\frac{2c}{-b\pm\sqrt{b^2-4ac}}\]yields the root for the quadratic $ax^2+bx+c$.
+\item Consider quadratics $f_k(x)=a_kx^2+b_kx+c_k$ for $k=1$ and $k=2$, where $a_k$, $b_k$, and $c_k$ are constants. Determine the criteria when $y=f_1(x)$ and $y=f_2(x)$ will meet, and the number of incident points for the conditions.
+\item By completing the square, solve the inequality $3x^4<12x^2-7$.
+\item \onestar Alice and Bob plays a game. Alice writes a quadratic $ax^2+bx+c$ on a whiteboard using a black marker, and another quadratic $px^2+qx+r$ using a red marker. At each round, Bob can perform one of the following actions on the black quadratic. 
+       \begin{itemize}
+              \item Swap the places of $a$ and $c$.
+              \item Replace $b$ with $-b$.
+              \item Replace the $x$ into some $x+k$ and rewrite the final quadratic instead.
+       \end{itemize}
+Bob wins if he can transform the black polynomial to the red polynomial. Else, Alice wins. 
+       \begin{itemize}
+              \item[(a)] On a game, Alice wrote the quadratic $x^2+5x+2$ using a black marker, and writes the quadratic $3x^2+2x+1$ using the red marker. Can Bob win?
+              \item[(b)] Prove that Alice have a winning strategy.
+       \end{itemize}
+\item Solve the following simultaneous equation. \[\begin{cases}x-y=2\\ xy-3y+1=0\end{cases}\]
+\item It is given that $x^2-y^2=3$ and $x^2+3xy+2y^2=12$.
+       \begin{itemize}
+              \item[(a)] Show that $(x+y)^2=9$.
+              \item[(b)] Hence, or otherwise, solve for $x$ and $y$.
+       \end{itemize}
+\item Show that the following simultaneous equation have infinite solutions. \[\begin{cases}x+y+z=2\\ x-y+2z=4\\ 3x+y+4z=8\end{cases}\]
+\item Solve the following simultaneous equation. \[\begin{cases}x+\frac 1y=2\\ y+\frac 1z=3\\ z+\frac 1x=4\end{cases}\]
+\item \onestar Given that a $3\times 3$ matrix \[A=\begin{pmatrix}a & b & c\\d & e & f\\ g & h & i\end{pmatrix}\] has determinant $\det(A)=aei+bfg+cdh-ceg-bdi-afh$. Then, the inverse of $A$ can be written as \[A^{-1}=\frac{1}{\det(A)}\begin{pmatrix}+(ei-fh) & -(di-fg) & +(dh-eg)\\-(bi-ch) & +(ai-cg) & -(ah-bg)\\ +(bf-ce) & -(af-cd) & +(ae-bd)\end{pmatrix}.\](Hopefully you can see the pattern!) Then, a system of equation can be written as \[\begin{pmatrix}a_1 & b_1 & c_1\\a_2 & b_2 & c_2\\ a_3 & b_3 & c_3\end{pmatrix}\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}d_1 \\ d_2 \\ d_3\end{pmatrix}\]
+with the normal form $A\mathbf{x}=\mathbf{b}$.
+       \begin{itemize}
+              \item[(a)] When is there a unique solution to a three variable linear simultaneous equation, as by above?
+              \item[(b)] When there is not a unique solution, what determines if it have infinite solution or no solution? (Tips: Consider the rows of the matrix.)
+              \item[(c)] Define $A_i$ by replacing the $i$-th row of the matrix $A$ with $\mathbf{b}$. Show that the solutions can be found by \[x=\frac{\det(A_1)}{\det(A)}\text{, }y=\frac{\det(A_2)}{\det(A)}\text{, }z=\frac{\det(A_3)}{\det(A)}.\]
+       \end{itemize}
+\item Simplify and evaluate $\log_5\left(\frac{\sqrt{9+4\sqrt{5}}+\sqrt{9-4\sqrt{5}}}{2}\right)$.
+\item Solve the equation $\log_4(x^2-4)-\log_2(x-2)=1$.
+\item Let $x_1$, $x_2$, $\cdots$, $x_n$ be positive real numbers with $x_i\neq 1$ for all $i$. Show that \footnotesize\[\frac{1}{1+\log_{x_1\hspace{-3pt}}x_2+\cdots+\log_{x_1\hspace{-3pt}}x_n}+\frac{1}{\log_{x_2\hspace{-3pt}}x_1+1+\cdots+\log_{x_2\hspace{-3pt}}x_n}+\cdots+\frac{1}{\log_{x_n\hspace{-3pt}}x_1+\log_{x_n\hspace{-3pt}}x_2+\cdots+1}=1.\]\normalsize
+\item Simplify the following expressions.
+\begin{itemize}
+              \item[(a)] $\displaystyle\frac{1}{1+\sqrt[3]{2}+\sqrt[2]{4}}$
+              \item[(b)] $\displaystyle\frac{1}{1-\sqrt[5]{3}}$
+       \end{itemize}
+\item Show that $3^{6n}+9^{3n+1}-27^{2n-1}$ is always divisible by $269$ for all positive integer $n$.
+\item Show that $8$ always divides $(2^n+3^n+6^n)^2-1$ for any nonnegative integer $n$.
+\item Let $T_1$, $T_2$, $\cdots$ be an arithmetic progression where $T_1$, $T_2$, $T_4$ forms a geometric progression with $T_1=e$.
+       \begin{itemize}
+              \item[(a)] Show that $T_1T_4=T_2^2$.
+              \item[(b)] Show that either $T_1=d$, where $d$ is the common difference, or $d=0$.
+              \item[(c)] For each case, find the general formula for $T_n$ and the sum of the first $n$ terms $S_n$.
+       \end{itemize}
+\item Let $T_1$, $T_2$, $\cdots$ be a geometric progression with each term a positive real. Known that the first three terms are an arithmetic progression, with $T_1=\pi$,
+       \begin{itemize}
+              \item[(a)] Show that $\log T_1$, $\log T_2$, $\cdots$ is an arithmetic progression.
+              \item[(b)] Show that the sequence is constant, i.e. $T_n=\pi$ for all $n$.
+              \item[(c)] Find the sum of the first $n$ terms, $S_n$.
+       \end{itemize}
+\item Given that a sequence $\{T_n\}$ have series $\{S_n\}$, i.e. the sum of the first $n$ terms.
+       \begin{itemize}
+              \item[(a)] Show that if $T_n$ is an arithmetic sequence, then $S_n$ is a quadratic.
+              \item[(b)] Show that if $\log S_n$ is linear, then $T_n$ is a geometric sequence.
+              \item[(c)] Given that $T_{n+1}S_n=T_nS_{n+1}$, determine the general formula for the sequence $\{T_n\}$ and its series $\{S_n\}$.
+       \end{itemize}
+\end{enumerate}
+
+\section{Geometry}
+\begin{enumerate}
+\item Given that a line has general equation $Ax+By+C=0$, show that two points determine a point.
+\item Show the formula for the interior dividor of a line segment, where if $A(x_1,y_1)$ and $B(x_2,y_2)$ have an internal dividor $P$ on $AB$ such that $AP:PB=m:n$, then \[P=(\frac{nx_1+mx_2}{m+n},\frac{ny_1+my_2}{m+n}).\](Note: You may try solving in both analytical geometry by similarity or by vectors.)
+\item Define the gradient of a line with equation $Ax+By+C=0$ as $-\frac{A}{B}$, where we can actually generalise that the gradient is $\infty$ when $B=0$, and define $\infty\times 0=-1$ and nothing else.
+       \begin{itemize}
+              \item[(a)] Show that under the definition above, if two lines are parallel, which never meet or coincide, with gradients $m_1$ and $m_2$, then $m_1=m_2$.
+              \item[(b)] Show that under the definition above, if two lines are perpendicular, then $m_1m_2=-1$.
+       \end{itemize} 
+(For a deeper dive or et cetera, actually look up projective planes, where we homogenize to $Ax+By+Cz=0$ instead.)
+\item Calculate the area of the convex polygon (convex hull of points) bounded by the points $A(-8,9)$, $B(-9,5)$, $C(-4,9)$, $D(-6,10)$, and $E(-6,4)$. (Remember to check the orientation and order of points!)
+\item For two points $A$, $B$ on the plane, show that the locus of the point $P$, where $AP:PB=m:n$ for some constants $m$, $n$ is a circle. (It is known as the Apollonius Circle!)
+\item Two vectors $\vec{p}$, $\vec{q}$ are said to be independent if $a\vec{p}+b\vec{q}=\vec{0}$ implies $a=b=0$. Show that two vectors are neither parallel nor anti-parallel (facing opposite directions)if and only if they are independent.
+\item Consider a triangle $ABC$ on the plane. Show that no matter where we place $O$, then for a fixed point $P$, there is a unique representation $(x:y:z)$ with $x+y+z=1$ of the point $P$ where $\overrightarrow{OP}=x\overrightarrow{OA}+y\overrightarrow{OB}+z\overrightarrow{OC}$. (i.e. We can find such an unique $(x:y:z)$, and it doesn't change even if we move $O$.)
+\item Consider a triangle $ABC$ with circumcircle $\omega$, circumcenter $O$ and circumradius $R$. Then, consider extending $AO$ to meet $\omega$ again at $A'$. By considering $\triangle AA'B$ and by similar constructions, prove the sine rule \[\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2R.\]
+\item Show that if given $\angle BAC$ acute, and $BC<AB$, we can construct two such triangles $\triangle ABC$, unless $\sin \angle BAC=\frac{BC}{AB}$.
+\item Consider a triangle $\triangle ABC$ where the foot of perpendicular of $A$ to $BC$, is within the segment $BC$, and let it be $D$. Then, show the cosine rule, \[a^2=b^2+c^2-2bc\cos A.\]
+\item Show the area of the triangle is given by \[\frac 12 ab\sin C.\]
+\item By using the law of cosines and the area of a triangle by sines, show the Heron's formula, where the area of the triangle is given by \[A=\sqrt{s(s-a)(s-b)(s-c)}\] where $s$ is the semiperimeter of the triangle, $2s=a+b+c$.
+\item Convert the following from degrees to radian, or from radian to degrees.
+       \begin{itemize}
+              \item[(a)] $4\pi\text{ rad}$
+              \item[(b)] $3060^{\circ}$
+              \item[(c)] $45^{\circ}15'12''$
+              \item[(d)] $\frac{5\pi}{4}\text{ rad}$
+              \item[(e)] $120\text{ rad}$
+              \item[(f)] $45$
+              \item[(g)] $\pi^{\circ}$
+       \end{itemize}
+\item Show that for a segment (region bounded by arc and chord) with the angle subtended to the center as $\theta$,
+       \begin{itemize}
+              \item[(a)] The perimeter of the segment is \[r\left(\theta+2\sin\frac\theta2\right).\]
+              \item[(b)] The area of the segment is \[\frac 12 r^2(\theta-\sin\theta)\]for $0<\theta<\pi$ and \[\frac 12 r^2(\theta+\sin\theta)\]for $\pi<\theta<2\pi$.
+       \end{itemize}
+\end{enumerate}
+
+\section{Calculus}
+\begin{enumerate}
+\item Find the value of the following.
+        \begin{itemize}
+              \item[(a)] $\displaystyle \lim_{x\to 0}\frac{x+1}{x^2+1}$
+              \item[(b)] $\displaystyle \lim_{p\to 0}\frac{x^2-5x+6}{x^2-3x+2}$
+              \item[(c)] $\displaystyle \lim_{x\to -\infty}\frac{8}{x^2}$
+              \item[(d)] $\displaystyle \lim_{x\to \infty} \frac{x^2+2}{2x^2+x+1}$
+              \item[(e)] $\displaystyle \lim_{n\to\infty} \left(\frac 34\right)^n$
+              \item[(f)] $\displaystyle \lim_{x\to 3}\frac{\sqrt{2x+3}-3}{x-3}$
+              \item[(g)] $\displaystyle \lim_{h\to 0}\frac{(x+h)^4-x^4}{h}$
+       \end{itemize}
+\item By using $\displaystyle \frac{\mathrm df}{\mathrm dx}=f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$, calculate $\frac{\mathrm dy}{\mathrm dx}$ when
+        \begin{itemize}
+              \item[(a)] $y=x^2+3$
+              \item[(b)] $\displaystyle y=-\frac{1}{x^2}+2$
+              \item[(c)] $y=x^n$, $n\in\mathbb{Z}$.
+       \end{itemize}
+\item By using the basic definition, show that for functions $p(x)$, $q(x)$, and for constants $a$, $b$, we have \[\frac{\mathrm d}{\mathrm dx}[ap(x)+bq(x)]=a\frac{\mathrm d}{\mathrm dx}p(x)+b\frac{\mathrm d}{\mathrm dx}q(x).\]
+
+\item Find the first (and second) derivatives of the following functions with respect to $x$.
+        \begin{itemize}
+              \item[(a)] $f(x)=\frac 4x$
+              \item[(b)] $p(x)=3x^3+7$
+              \item[(c)] $q(x)=\frac{x^3+1}{x^2}$
+              \item[(d)] $f(x)=4x^2(\sqrt[3]{x}-x)$
+              \item[(e)] $g(x)=(4+x)^7$
+              \item[(f)] $f(x)=2\sqrt{1-tx^2}$
+              \item[(g)] $g(x)=(x+1)^4(x-1)^5$
+              \item[(h)] $h(x)=\frac{4-3x}{\sqrt[3]{2-x}}$
+              \item[(i)] $s(x)=x^{\frac 23}(d^2-x^2)^{\frac 16}$
+              \item[(j)] $f(x)=[g(x)]^2-g^2(x)$, $g(x)=x^4-1$
+       \end{itemize}
+\item Prove that for a quadratic curve, no line can be both a normal and a tangent to the curve.
+\item \onestar Given a curve $y=ax^3+bx+c$ having a tangent passing through $(0,-1)$. Show that regardless of how $a$, $b$ changes for fixed $c$, this tangent always intersect at another point with $x=x_0$, and $\frac{x_0}{\sqrt[3]{a}}$ is constant. (You may show that the intersection must have the same $x_0$ for $b$ fixed, then show that the intersection have $x_0/\sqrt[3]{a}$ fixed.)
+\item Determine the turning points of $y=x^{5}-4x^{3}-9x+12$, and determine if they are the local maximum or the minimum.
+\item Consider $f(x)=(x^2+1)(x+1)(x-3)(x-4)-12$. Determine for which $n\in\mathbb{Z}$ is $f(n)=0$, $f(n)>0$, and $f(n)<0$.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
