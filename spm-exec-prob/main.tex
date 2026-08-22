@@ -39,6 +39,7 @@ The various topics are arranged into categories of approximate fields of mathema
        \item \twostar This is a hard problem.
        \item \threestar This is a very hard problem. 
 \end{enumerate}
+\tableofcontents
 
 \newpage\noindent
 \section{Algebra}
@@ -135,12 +136,20 @@ with the normal form $A\mathbf{x}=\mathbf{b}$.
               \item[(b)] Show that if $\log S_n$ is linear, then $T_n$ is a geometric sequence.
               \item[(c)] Given that $T_{n+1}S_n=T_nS_{n+1}$, determine the general formula for the sequence $\{T_n\}$ and its series $\{S_n\}$.
        \end{itemize}
+\item Consider the following relations, and transforming them into linear relations. (Constants are unknown to you, while other variables you have data for.)
+       \begin{itemize}
+              \item[(a)] $s=v_0t+\frac 12 at^2$, where $v_0$, $a$ are constants.
+              \item[(b)] $f=\frac{uv}{u+v}$, where $f$ is constant.
+              \item[(c)] $N=N_0e^{-\lambda t}$, where $N_0$, $\lambda$ are constants.
+              \item[(d)] $Ax^2+Bxy+Cy^2=0$, where $A$, $B$, are constants when known $C=1$.
+       \end{itemize}
 \end{enumerate}
 
 \section{Geometry}
 \begin{enumerate}
-\item Given that a line has general equation $Ax+By+C=0$, show that two points determine a point.
+\item Given that a line has general equation $Ax+By+C=0$, show that two points determine a line. (Clearly $A$, $B$, $C$ not all $0$ right?)
 \item Show the formula for the interior dividor of a line segment, where if $A(x_1,y_1)$ and $B(x_2,y_2)$ have an internal dividor $P$ on $AB$ such that $AP:PB=m:n$, then \[P=(\frac{nx_1+mx_2}{m+n},\frac{ny_1+my_2}{m+n}).\](Note: You may try solving in both analytical geometry by similarity or by vectors.)
+\newpage\noindent
 \item Define the gradient of a line with equation $Ax+By+C=0$ as $-\frac{A}{B}$, where we can actually generalise that the gradient is $\infty$ when $B=0$, and define $\infty\times 0=-1$ and nothing else.
        \begin{itemize}
               \item[(a)] Show that under the definition above, if two lines are parallel, which never meet or coincide, with gradients $m_1$ and $m_2$, then $m_1=m_2$.
@@ -170,6 +179,32 @@ with the normal form $A\mathbf{x}=\mathbf{b}$.
        \begin{itemize}
               \item[(a)] The perimeter of the segment is \[r\left(\theta+2\sin\frac\theta2\right).\]
               \item[(b)] The area of the segment is \[\frac 12 r^2(\theta-\sin\theta)\]for $0<\theta<\pi$ and \[\frac 12 r^2(\theta+\sin\theta)\]for $\pi<\theta<2\pi$.
+       \end{itemize}
+\item Sketch the graph of
+       \begin{itemize}
+              \item[(a)] $y=\tan x$,
+              \item[(b)] $y=4\sin 2x$,
+              \item[(c)] $y=|\frac 12\sin x-1|$,
+              \item[(d)] $y=||\sin 2x|-\frac 12|$.
+       \end{itemize}
+\item For a triangle $\triangle ABC$, show that
+       \begin{itemize}
+              \item[(a)] $\tan A+\tan B+\tan C=\tan(A+B+C)$,
+              \item[(b)] $\cot \frac A2+\cot \frac B2+\cot \frac C2=\tan(\frac{A+B+C}{2})$,
+              \item[(c)] $\sin 2A+\sin 2B+\sin 2C=4\sin A\sin B\sin C$,
+              \item[(d)] $\cos^2 A+\cos^2 B+\cos^2 C+2\cos A\cos B\cos C=1$.
+       \end{itemize}
+\item Show that
+       \begin{itemize}
+              \item[(a)] $\displaystyle \tan^{-1}\frac 12=\tan^{-1}\frac 13+\tan^{-1}\frac 17$,
+              \item[(b)] $\displaystyle \cos 20^{\circ}\cos40^{\circ}\cos 80^{\circ}=\frac 18$,
+              \item[(c)] $\tan^{-1}1+\tan^{-1}2+\tan^{-1}3=\pi$.
+       \end{itemize}
+\item Show that
+       \begin{itemize}
+              \item[(a)] the general solution of $\sin \theta=a$ is\[\theta=n\pi+(-1)^n\sin^{-1}a,\]
+              \item[(b)] the general solution of $\cos \theta=b$ is\[\theta=2n\pi\pm\cos^{-1}b,\]
+              \item[(c)] the general solution of $\tan \theta=c$ is \[\theta=n\pi+\tan^{-1}c.\]
        \end{itemize}
 \end{enumerate}
 
@@ -206,10 +241,73 @@ with the normal form $A\mathbf{x}=\mathbf{b}$.
               \item[(i)] $s(x)=x^{\frac 23}(d^2-x^2)^{\frac 16}$
               \item[(j)] $f(x)=[g(x)]^2-g^2(x)$, $g(x)=x^4-1$
        \end{itemize}
-\item Prove that for a quadratic curve, no line can be both a normal and a tangent to the curve.
+\item Prove that for a quadratic curve, no line can be both a normal and a tangent to the curve. (Solution using algebra methods exists as well!)
 \item \onestar Given a curve $y=ax^3+bx+c$ having a tangent passing through $(0,-1)$. Show that regardless of how $a$, $b$ changes for fixed $c$, this tangent always intersect at another point with $x=x_0$, and $\frac{x_0}{\sqrt[3]{a}}$ is constant. (You may show that the intersection must have the same $x_0$ for $b$ fixed, then show that the intersection have $x_0/\sqrt[3]{a}$ fixed.)
 \item Determine the turning points of $y=x^{5}-4x^{3}-9x+12$, and determine if they are the local maximum or the minimum.
 \item Consider $f(x)=(x^2+1)(x+1)(x-3)(x-4)-12$. Determine for which $n\in\mathbb{Z}$ is $f(n)=0$, $f(n)>0$, and $f(n)<0$.
+\item \onestar Given that $\displaystyle \frac{\mathrm d}{\mathrm dx}\cos x=\sin x$ and $\displaystyle \frac{\mathrm d}{\mathrm dx}e^x=e^x$.
+       \begin{itemize}
+              \item[(a)] Calculate $\displaystyle \frac{\mathrm d}{\mathrm dx}\sin x$, then demonstrate that $y=A\sin(\omega x)+B\cos(\omega x)$ satisfies the equation $\displaystyle \frac{\mathrm d^2y}{\mathrm dx^2}+y=0$.
+              \item[(b)] Then, show that $e^{it}=\cos t+i\sin t$, where $i$ is the imaginary unit with $i^2=-1$.
+       \end{itemize}
+\item Given that $\displaystyle \frac{\mathrm d}{\mathrm dx}\ln x=\frac 1x$,
+       \begin{itemize}
+              \item[(a)] Calculate $\displaystyle\frac{\mathrm d}{\mathrm dx} x\ln x$.
+              \item[(b)] Then, find $\displaystyle \int\ln(ax+b)\mathrm dx$.
+       \end{itemize}
+\item \begin{itemize}
+              \item[(a)] Show that \[\frac{\mathrm d}{\mathrm dx}\frac{(x+2)^3(x^2-4)^4}{x^2+4}=\frac{(x-2)^3(x+2)^6(9x^3-6x^2+52x-24)}{(x^2+4)^2}.\]
+              \item[(b)] Hence, or otherwise, calculate \[\int \frac{(x-2)^3(x+2)^6(9x^3-6x^2+52x-24)}{(x^2+4)^2}\mathrm dx.\]
+              \item[(c)] Calculate \[\int_{-1}^1 \frac{(x-2)^3(x+2)^6(9x^3-6x^2+52x-24)}{(x^2+4)^2}\mathrm dx.\]
+       \end{itemize}
+\item Evaluate the following integerals.
+        \begin{itemize}
+              \item[(a)] $\displaystyle \int (6x^2+3x+2)\mathrm dx$
+              \item[(b)] $\displaystyle \int \sqrt[5]{x+2}\mathrm dx$
+              \item[(c)] $\displaystyle \int (x^2-3x+1)(2x+3)\mathrm dx$
+              \item[(d)] $\displaystyle \int_0^1 (7x-6)^{23}\mathrm dy$
+              \item[(e)] $\displaystyle \int_2^3 (7x-6)^{23}\mathrm dx$
+       \end{itemize}
+\item By using the substitution $u=6x^2+3x-2$, calculate $\displaystyle \int (6x^2+3x-2)^5(4x+1)\mathrm dx$.
+\item If $\displaystyle \int_a^b f(x)\mathrm dx=6$ with $a\neq b$, can we calculate $\displaystyle \int_b^a 3f(2x)\mathrm dx$? If so, calculate the value, or else, explain why.
+\item Calculate the area bounded by these curves.
+       \begin{itemize}
+              \item[(a)] $x=1$, $x=3$, $x$-axis, and $y=x^3$.
+              \item[(b)] $x$-axis, and $y=x^4-2x$.
+              \item[(c)] $x$-axis, $y$-axis, and $y=\sqrt{1-5x}$.
+              \item[(d)] $x$-axis, $y$-axis, and $y=-\frac{4x+3}{x+2}$.
+              \item[(e)] negative $x$-axis, positive $y$-axis, and $y=(x+1)(x+2)(x+3)$.
+              \item[(f)] $x+2y=22$, $y=(x+4)^3$, and $x$-axis.
+              \item[(g)] $y=\sqrt{x}$, $y=1/x$, and $180y+13x^2-125x-68=0$.
+       \end{itemize}
+\item Calculate the volume of when the region bounded by the $x$-axis and $y=-x(x-4)$ is rotated through $360^\circ$ around the $x$ axis.
+\end{enumerate}
+
+\section{Combinatorics}
+\begin{enumerate}
+\item Given six books to be distrubuted to three person, $A$, $B$ and $C$, how many ways are there if
+       \begin{itemize}
+              \item[(a)] there are no restrictions,
+              \item[(b)] each person must get an equal amount of books,
+              \item[(c)] each person must get a different nonzero amount of books.
+       \end{itemize}
+\item Let $A$, $B$, $C$ be a triangle on a plane. If there are $a$ points between $B$ and $C$, $b$ points between $A$ and $C$, and $c$ points between $A$ and $B$, and we con only choose from these $a+b+c$ points, how many non-degenerate triangles can be constructed?
+\item Given $r$ identical red balls, $y$ identical yellow balls, and $b$ identical blue balls, how many ways are there to distribute between two person, Alice and Bob, if
+       \begin{itemize}
+              \item[(a)] there are no restrictions,
+              \item[(b)] each person get all colours of balls,
+              \item[(c)] each person get balls of at most two colours.
+       \end{itemize}
+\item Determine the number of five digit numbers divisible by $45$ and containing on the digits $1$, $2$, $3$, $4$, $5$, possibly multiple times.
+\item Given a deck of cards ($52$ cards), what is the probability of drawing four cards, where we can form two pairs based on similarities (same suit or same value)?
+\item Find the probability that when a fair $6$ faced ordinary dice (D6) is throw thrice, the sum of value is
+       \begin{itemize}
+              \item[(a)] $3$,
+              \item[(b)] $12$,
+              \item[(c)] at least $12$.
+       \end{itemize}
+\item By using the binomial formula or otherwise, show that if $X\sim B(n,p)$, then \[\mathbb{P}(X=r)=\binom{n}{r}p^r(1-p)^{n-r}.\]Then, by using the definition for variance, show that $\sigma=\sqrt{np(1-p)}$.
+\item By using the fact that the \textsc{pdf} (probablity density function) of $X\sim N(\mu,\sigma^2)$ is \[f_X(x)={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}\exp {\left(-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}\right)},\]where $\exp x=e^x$, show that $\displaystyle Z=\frac{X-\mu}{\sigma}$ standardises the normal distrubution, or $Z\sim N(0,1)$.
 \end{enumerate}
 
 
